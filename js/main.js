@@ -8,22 +8,12 @@ inputImie.onkeydown = inputNameChange; */
 let button = document.querySelector("button");
 
 
-let inputImie = document.getElementById("imie");
-let inputNazwisko = document.getElementById("nazwisko");
-let inputTelefon = document.getElementById("telefon");
-
-
-
-let paragraf1 = document.getElementById("name");
-let paragraf2 = document.getElementById("surname");
-let paragraf3 = document.getElementById("phone");
-
-
 
 
 button.onclick = function (){
-    paragraf1.textContent = inputImie.value;
-    paragraf2.textContent = inputNazwisko.value;
-    paragraf3.textContent = inputTelefon.value;
+    document.getElementById("name").textContent = document.getElementById("imie").value;
+    document.getElementById("surname").textContent = document.getElementById("nazwisko").value;
+    document.getElementById("phone").textContent = document.getElementById("telefon").value;
 }
+
 
